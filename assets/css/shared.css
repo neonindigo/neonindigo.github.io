@@ -1,0 +1,164 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: #0a0a0f;
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a { color: #9370db; text-decoration: none; }
+a:hover { color: #c8b6ff; }
+
+/* ── Header ── */
+header {
+    padding: 1.75rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, #7b68ee, #9370db, #c8b6ff, #9370db, #7b68ee);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s ease-in-out infinite;
+    text-decoration: none;
+}
+
+@keyframes shimmer {
+    0%   { background-position: 100% 50%; }
+    100% { background-position: 0%   50%; }
+}
+
+/* ── Main ── */
+main {
+    flex: 1;
+    padding: 3rem 2rem 4rem;
+}
+
+.content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 600;
+    color: #c8b6ff;
+    margin-bottom: 0.4rem;
+    letter-spacing: -0.02em;
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 3rem;
+}
+
+.content h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #9370db;
+    margin: 2.5rem 0 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.content p {
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.content ul,
+.content ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content li {
+    margin-bottom: 0.4rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.content a {
+    color: #9370db;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.content a:hover { color: #c8b6ff; }
+
+/* ── Contact card (Support page) ── */
+.contact-card {
+    margin: 2rem 0;
+    padding: 1.5rem 1.75rem;
+    border: 1px solid rgba(147, 112, 219, 0.25);
+    border-radius: 12px;
+    background: rgba(75, 0, 130, 0.1);
+}
+
+.contact-card p { margin: 0; }
+
+.contact-card a {
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+/* ── App list (Support page) ── */
+.app-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.app-list li {
+    padding: 1rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.app-list .app-name {
+    font-weight: 600;
+    color: #c8b6ff;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.app-list .app-desc {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── Footer ── */
+footer {
+    padding: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    gap: 1.5rem 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer nav a {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+}
+
+footer nav a:hover { color: rgba(255, 255, 255, 0.65); }
