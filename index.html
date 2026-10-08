@@ -3,101 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeonIndigo</title>
-    <meta name="description" content="NeonIndigo — Coming Soon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+    <title>NeonIndigo — Thoughtful, delightful apps</title>
+    <meta name="description" content="NeonIndigo is an independent app studio building thoughtful, delightful apps for Apple platforms.">
+    <meta name="theme-color" content="#090812">
+    <meta property="og:title" content="NeonIndigo — Thoughtful, delightful apps">
+    <meta property="og:description" content="Independent apps for Apple platforms, made with care.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neonindigo.com/">
+    <link rel="canonical" href="https://neonindigo.com/">
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="/assets/css/site.css?v=20261008-4">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="117c436d-3df4-4594-a7ba-081890b36b21"></script>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #0a0a0f;
-            font-family: 'Inter', sans-serif;
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* Subtle animated gradient orb */
-        .orb {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(75, 0, 130, 0.3), rgba(75, 0, 130, 0.05), transparent 70%);
-            filter: blur(80px);
-            animation: float 10s ease-in-out infinite alternate;
-        }
-
-        .orb:nth-child(2) {
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(100, 60, 180, 0.2), transparent 70%);
-            animation: float 14s ease-in-out infinite alternate-reverse;
-            top: 20%;
-            right: 20%;
-        }
-
-        @keyframes float {
-            0% { transform: translate(-40vw, -5vh) scale(1); }
-            100% { transform: translate(40vw, 5vh) scale(1.1); }
-        }
-
-        .content {
-            text-align: center;
-            z-index: 1;
-            position: relative;
-        }
-
-        .logo {
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(90deg, #7b68ee, #9370db, #c8b6ff, #9370db, #7b68ee);
-            background-size: 300% 100%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: shimmer 4s ease-in-out infinite;
-        }
-
-        @keyframes shimmer {
-            0% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .tagline {
-            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-            font-weight: 300;
-            color: rgba(255, 255, 255, 0.4);
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-        }
-
-        /* Subtle dot on the i */
-        .dot {
-            display: inline-block;
-            animation: pulse 3s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-    </style>
+    <script defer src="/assets/js/site.js?v=20261008-4"></script>
 </head>
 <body>
-    <div class="orb"></div>
-    <div class="orb"></div>
-    <div class="content">
-        <h1 class="logo">NeonIndigo</h1>
-        <p class="tagline">Coming Soon</p>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a href="/" class="wordmark" aria-label="NeonIndigo home">NeonIndigo</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#apps">Apps</a>
+            <a href="#updates">Updates</a>
+            <a href="/support">Support</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero section-shell">
+            <p class="eyebrow reveal">Independent app studio</p>
+            <h1 class="reveal">Thoughtful, delightful apps for <span>Apple platforms.</span></h1>
+            <p class="hero-copy reveal">We make focused software that removes small frustrations and makes everyday tasks feel a little better.</p>
+            <a class="text-link reveal" href="#apps">Meet our apps <span aria-hidden="true">↓</span></a>
+        </section>
+
+        <section class="apps-section section-shell" id="apps" aria-labelledby="apps-title">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Our apps</p>
+                <h2 id="apps-title">Small tools. Meaningful difference.</h2>
+            </div>
+
+            <article class="app-card app-card-featured reveal">
+                <div class="app-card-copy">
+                    <div class="app-identity">
+                        <img src="/assets/images/vouchervault/icon.webp" width="512" height="512" alt="VoucherVault app icon" class="app-icon app-icon-large">
+                        <div>
+                            <p class="status-pill" data-release-status>Pre-order</p>
+                            <h3>VoucherVault</h3>
+                        </div>
+                    </div>
+                    <p class="app-lead">Your codes, ready when you need them.</p>
+                    <p>Move voucher, reward card, barcode and QR code screenshots out of Photos and into one organised wallet.</p>
+                    <div class="card-actions">
+                        <a class="button button-primary" href="/vouchervault/" data-umami-event="Homepage — Open VoucherVault">
+                            Explore VoucherVault
+                            <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 10h11M11 6l4 4-4 4"/></svg>
+                        </a>
+                        <span class="release-note" data-release-note>Available 16 October 2026</span>
+                    </div>
+                </div>
+                <div class="app-preview" aria-hidden="true">
+                    <img src="/assets/images/vouchervault/save-vouchers.webp" width="1242" height="2688" alt="">
+                </div>
+            </article>
+
+            <div class="app-secondary-grid">
+                <article class="app-card app-card-compact app-card-routebuddy reveal">
+                    <div class="app-identity">
+                        <img src="/assets/images/routebuddy/icon.webp" width="512" height="512" alt="RouteBuddy app icon" class="app-icon">
+                        <div>
+                            <p class="status-pill">Available for macOS</p>
+                            <h3>RouteBuddy</h3>
+                        </div>
+                    </div>
+                    <p class="app-lead">Your GPX routes, clearly mapped.</p>
+                    <p>View and edit tracks, routes and waypoints on Mac, with route previews directly in Finder through Quick Look.</p>
+                    <div class="brew-install">
+                        <a href="https://github.com/neonindigo/homebrew-tap" target="_blank" rel="noopener" data-umami-event="Homepage — Open RouteBuddy Homebrew">
+                            Install with Homebrew
+                            <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M7 5h8v8M15 5l-9 9"/></svg>
+                        </a>
+                        <div class="brew-command-row">
+                            <code>brew install --cask neonindigo/tap/routebuddy</code>
+                            <button class="copy-command" type="button" data-copy-text="brew install --cask neonindigo/tap/routebuddy" aria-label="Copy Homebrew install command">
+                                <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M7 6V4.75A1.75 1.75 0 0 1 8.75 3h6.5A1.75 1.75 0 0 1 17 4.75v6.5A1.75 1.75 0 0 1 15.25 13H14M4.75 7h6.5A1.75 1.75 0 0 1 13 8.75v6.5A1.75 1.75 0 0 1 11.25 17h-6.5A1.75 1.75 0 0 1 3 15.25v-6.5A1.75 1.75 0 0 1 4.75 7Z"/></svg>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+                        <p class="visually-hidden" data-copy-status aria-live="polite"></p>
+                    </div>
+                </article>
+
+                <article class="app-card app-card-compact app-card-reach reveal">
+                    <div class="app-identity">
+                        <img src="/assets/images/reach/icon.webp" width="304" height="304" alt="Reach app icon" class="app-icon">
+                        <div>
+                            <p class="status-pill status-muted">Coming soon</p>
+                            <h3>Reach</h3>
+                        </div>
+                    </div>
+                    <p class="app-lead">Choose deployment targets with confidence.</p>
+                    <p>A native toolkit for Apple-platform developers to measure user impact, compare OS versions and understand device compatibility.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter-section section-shell reveal" id="updates" aria-labelledby="updates-title">
+            <div>
+                <p class="eyebrow">Stay in the loop</p>
+                <h2 id="updates-title">Only the news worth sending.</h2>
+                <p>Major app launches and meaningful product updates from NeonIndigo. No fixed schedule, no noise.</p>
+            </div>
+            <form class="newsletter-form" data-kit-form="studio" novalidate>
+                <label for="studio-email">Email address</label>
+                <div class="form-row">
+                    <input id="studio-email" name="email_address" type="email" autocomplete="email" placeholder="you@example.com" required disabled>
+                    <button class="button button-primary" type="submit" disabled>Setup pending</button>
+                </div>
+                <p class="form-note" data-form-note>Email signup will open soon. See our <a href="/privacy">privacy policy</a>.</p>
+                <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+        <a href="/" class="wordmark wordmark-small">NeonIndigo</a>
+        <p>Thoughtful, delightful apps for Apple platforms.</p>
+        <nav aria-label="Footer navigation">
+            <a href="/vouchervault/">VoucherVault</a>
+            <a href="/support">Support</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+        </nav>
+        <p class="copyright">&copy; <span data-current-year>2026</span> NeonIndigo</p>
+    </footer>
 </body>
 </html>
