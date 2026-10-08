@@ -91,19 +91,23 @@ input {
 
 .skip-link {
     position: fixed;
-    z-index: 1000;
-    top: 0.75rem;
-    left: 0.75rem;
+    z-index: 10000;
+    top: calc(env(safe-area-inset-top, 0px) + 5.25rem);
+    left: calc(env(safe-area-inset-left, 0px) + 0.75rem);
     padding: 0.75rem 1rem;
     border-radius: 10px;
     background: var(--text);
     color: var(--bg);
-    transform: translateY(-150%);
-    transition: transform 180ms var(--ease);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(calc(-100% - 2rem));
+    transition: opacity 180ms ease, transform 180ms var(--ease);
 }
 
 .skip-link:focus {
-    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
 }
 
 .section-shell,
